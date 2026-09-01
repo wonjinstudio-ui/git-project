@@ -11,6 +11,10 @@ async function getPopularMovies() {
   const response = await fetch(URL, options);
   const data = await response.json();
   const firstMovie = data.results[0];
+  const { title, vote_average } = firstMovie;
+
+  console.log(`제목: ${title}`);
+  console.log(`평점: ${vote_average}`);
 }
 
 getPopularMovies();
