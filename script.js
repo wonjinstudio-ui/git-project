@@ -7,6 +7,8 @@ const options = {
 
 const URL = "https://api.themoviedb.org/3/movie/popular?language=ko-KR&page=1";
 
-async function getNowPlaying() {}
+async function getPopularMovies() {
+  const response = await fetch(URL, options);
+}
 
-getNowPlaying();
+getPopularMovies();
