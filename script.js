@@ -9,6 +9,7 @@ const URL = "https://api.themoviedb.org/3/movie/popular?language=ko-KR&page=1";
 
 async function getPopularMovies() {
   const response = await fetch(URL, options);
+  const data = await response.json();
 }
 
 getPopularMovies();
