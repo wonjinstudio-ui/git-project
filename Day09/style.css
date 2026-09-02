@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  color: #222;
+}
+
+.container {
+  width: min(1200px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+h1 {
+  margin: 0 0 24px;
+}
+
+.movie-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.movie-card {
+  overflow: hidden;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.movie-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+}
+
+.movie-card h3,
+.movie-card p {
+  margin: 0;
+  padding: 0 16px;
+}
+
+.movie-card h3 {
+  padding-top: 16px;
+  font-size: 18px;
+}
+
+.movie-card p {
+  margin-top: 8px;
+  padding-bottom: 16px;
+  color: #555;
+}
