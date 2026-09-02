@@ -32,7 +32,12 @@ function createMovieCard(movie) {
   return card;
 }
 
-function renderMovies(movies) {}
+function renderMovies(movies) {
+  movies.forEach((movie) => {
+    const movieCard = createMovieCard(movie);
+    container.append(movieCard);
+  });
+}
 
 async function getTopRatedMovies() {
   const response = await fetch(URL, options);
