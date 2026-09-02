@@ -26,6 +26,10 @@ function createMovieCard(movie) {
 
   const rating = document.createElement("p");
   rating.textContent = `평점 ${vote_average}`;
+
+  card.append(poster, titleEl, rating);
+
+  return card;
 }
 
 function renderMovies(movies) {}
