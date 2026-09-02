@@ -46,6 +46,8 @@ async function getTopRatedMovies() {
   const data = await response.json();
 
   container.textContent = "";
+
+  renderMovies(data.results);
 }
 
 getTopRatedMovies();
