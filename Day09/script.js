@@ -40,8 +40,12 @@ function renderMovies(movies) {
 }
 
 async function getTopRatedMovies() {
+  container.textContent = "평점 높은 영화 목록을 불러오는 중...";
+
   const response = await fetch(URL, options);
   const data = await response.json();
+
+  container.textContent = "";
 }
 
 getTopRatedMovies();
