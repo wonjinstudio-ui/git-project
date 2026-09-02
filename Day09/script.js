@@ -11,6 +11,9 @@ const container = document.querySelector("#movie-list");
 
 function createMovieCard(movie) {
   const { title, vote_average, poster_path } = movie;
+
+  const card = document.createElement("div");
+  card.className = "movie-card";
 }
 
 function renderMovies(movies) {}
