@@ -14,6 +14,12 @@ function createMovieCard(movie) {
 
   const card = document.createElement("div");
   card.className = "movie-card";
+
+  const poster = document.createElement("img");
+  poster.src = poster_path
+    ? `https://image.tmdb.org/t/p/w500${poster_path}`
+    : "https://placehold.co/500x750?text=No+Image";
+  poster.alt = `${title} 포스터`;
 }
 
 function renderMovies(movies) {}
