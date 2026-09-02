@@ -20,6 +20,12 @@ function createMovieCard(movie) {
     ? `https://image.tmdb.org/t/p/w500${poster_path}`
     : "https://placehold.co/500x750?text=No+Image";
   poster.alt = `${title} 포스터`;
+
+  const titleEl = document.createElement("h3");
+  titleEl.textContent = title;
+
+  const rating = document.createElement("p");
+  rating.textContent = `평점 ${vote_average}`;
 }
 
 function renderMovies(movies) {}
