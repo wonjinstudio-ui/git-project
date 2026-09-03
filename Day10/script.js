@@ -40,6 +40,7 @@ function renderMovies(movies) {
 }
 
 async function getPopularMovies() {
+  container.textContent = "영화 목록을 불러오는 중...";
   try {
     const response = await fetch(URL, options);
 
