@@ -49,6 +49,9 @@ async function getPopularMovies() {
       return;
     }
     const data = await response.json();
+
+    container.textContent = "";
+    renderMovies(data.results);
   } catch (error) {
     container.textContent = "에러가 발생했습니다";
   }
