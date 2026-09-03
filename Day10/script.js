@@ -47,6 +47,7 @@ async function getPopularMovies() {
       container.textContent = "영화 정보를 불러오지 못했습니다";
       return;
     }
+    const data = await response.json();
   } catch (error) {
     container.textContent = "에러가 발생했습니다";
   }
