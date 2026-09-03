@@ -41,9 +41,9 @@ function renderMovies(movies) {
 
 async function getPopularMovies() {
   try {
-    // 실행할 코드
+    const response = await fetch(URL, options);
   } catch (error) {
-    // 오류 처리
+    container.textContent = "에러가 발생했습니다";
   }
 }
 
