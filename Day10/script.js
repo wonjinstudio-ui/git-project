@@ -53,7 +53,8 @@ async function getPopularMovies() {
     container.textContent = "";
     renderMovies(data.results);
   } catch (error) {
-    container.textContent = "에러가 발생했습니다";
+    container.textContent = "영화 정보를 불러오지 못했습니다.";
+    console.log(error);
   }
 }
 
