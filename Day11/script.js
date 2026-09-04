@@ -107,6 +107,12 @@ async function searchTVShows(keyword) {
     console.log(data.results);
 
     container.textContent = "";
+
+    if (data.results.length === 0) {
+      container.textContent = "검색 결과가 없습니다.";
+
+      return;
+    }
   } catch (error) {
     container.textContent = "TV 프로그램 정보를 불러오지 못했습니다.";
 
