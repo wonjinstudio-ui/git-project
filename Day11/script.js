@@ -92,7 +92,8 @@ async function searchTVShows(keyword) {
   resultInfo.textContent = "";
 
   try {
-    // TODO 2.
+    const encodedKeyword = encodeURIComponent(keyword);
+    const url = `https://api.themoviedb.org/3/search/tv?query=${encodedKeyword}&language=ko-KR&page=1`;
 
     const response = await fetch(url, options);
 
