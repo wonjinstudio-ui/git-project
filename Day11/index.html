@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>TV 프로그램 검색</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <main class="container">
+      <h1>TV 프로그램 검색</h1>
+
+      <form id="search-form" class="search-form">
+        <input
+          id="search-input"
+          type="text"
+          placeholder="TV 프로그램 제목을 입력하세요"
+        />
+        <button type="submit">검색</button>
+      </form>
+
+      <p id="result-info" class="result-info"></p>
+      <div id="tv-list" class="tv-list"></div>
+    </main>
+
+    <script src="./token.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
