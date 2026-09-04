@@ -80,7 +80,9 @@ form.addEventListener("submit", (event) => {
 
   const keyword = input.value.trim();
 
-  // TODO 1.
+  if (!keyword) {
+    return;
+  }
 
   // TODO 심화 02.
   searchTVShows(keyword);
