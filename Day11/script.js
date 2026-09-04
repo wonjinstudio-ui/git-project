@@ -103,7 +103,8 @@ async function searchTVShows(keyword) {
       return;
     }
 
-    // TODO 3.
+    const data = await response.json();
+    console.log(data.results);
     // TODO 4.
     // TODO 5.
 
