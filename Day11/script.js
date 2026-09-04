@@ -113,6 +113,7 @@ async function searchTVShows(keyword) {
 
       return;
     }
+    renderTVShows(data.results);
   } catch (error) {
     container.textContent = "TV 프로그램 정보를 불러오지 못했습니다.";
 
