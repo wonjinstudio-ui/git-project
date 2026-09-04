@@ -105,12 +105,8 @@ async function searchTVShows(keyword) {
 
     const data = await response.json();
     console.log(data.results);
-    // TODO 4.
-    // TODO 5.
 
-    // TODO 심화 01.
-
-    // TODO 6.
+    container.textContent = "";
   } catch (error) {
     container.textContent = "TV 프로그램 정보를 불러오지 못했습니다.";
 
