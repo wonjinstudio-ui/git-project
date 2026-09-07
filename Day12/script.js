@@ -92,7 +92,7 @@ form.addEventListener("submit", (event) => {
     return;
   }
 
-  input.value = ""; // 검색창 비우기
+  input.value = "";
 
   searchMovies(keyword);
 });
@@ -111,7 +111,7 @@ async function searchMovies(keyword) {
 
     const data = await response.json();
 
-    // TODO 04. 같은 검색어가 있다면 기존 위치에서 제거하기
+    keywords = keywords.filter((itemKeyword) => itemKeyword !== keyword);
 
     // TODO 05. 최신 검색어를 배열 맨 앞에 추가하기
 
