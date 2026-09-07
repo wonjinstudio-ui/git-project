@@ -113,7 +113,7 @@ async function searchMovies(keyword) {
 
     keywords = keywords.filter((itemKeyword) => itemKeyword !== keyword);
 
-    // TODO 05. 최신 검색어를 배열 맨 앞에 추가하기
+    keywords.unshift(keyword);
 
     // TODO 06. 최근 검색어 배열 localStorage에 저장하기
 
