@@ -147,7 +147,7 @@ async function getNowPlayingMovies() {
   }
 }
 
-// TODO 08. 새로고침 후에도 최근 검색어 표시하기
+renderKeywords();
 
 // TODO 심화 02. 최근 검색어 전체 삭제하기
 
