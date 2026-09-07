@@ -117,7 +117,7 @@ async function searchMovies(keyword) {
 
     localStorage.setItem("keywords", JSON.stringify(keywords));
 
-    // TODO 07. 최근 검색어 목록 다시 그리기
+    renderKeywords();
 
     renderMovies(data.results);
   } catch (error) {
