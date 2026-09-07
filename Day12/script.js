@@ -12,10 +12,10 @@ const input = document.querySelector("#search-input");
 const container = document.querySelector("#movie-list");
 const keywordList = document.querySelector("#keyword-list");
 const clearButton = document.querySelector("#clear-keywords");
+
 const savedKeywords = localStorage.getItem("keywords");
 
-// TODO 03. 저장된 최근 검색어 배열 가져오기
-let keywords;
+let keywords = savedKeywords ? JSON.parse(savedKeywords) : [];
 
 function renderKeywords() {
   keywordList.textContent = "";
